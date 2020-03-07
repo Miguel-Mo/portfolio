@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    /*esto es para cuando le das a un enace interno hace que mueva suave y no directamente*/
+    /*scroll-snap-type: mandatory;*/
+    scroll-snap-points-y: repeat(100vh);
+    /*esto es para ques emueva por secciones*/
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    /*background-color: #737272;*/
+    width: 100%;
+    font-family: montserrat;
+
+}
+
+/*Logo*/
+
+
+section {
+    scroll-snap-align: start;
+}
+
+#frontop {
+    height: 90vh;
+    background-image: url(textura/bitchuentexture.png);
+    background-color: #403E3F;
+
+    display: flex;
+    justify-content: center;
+    /* position: relative;    
+    padding-left: 33%;    
+    padding-top: 3%;
+    margin: auto;   */
+}
+
+
+#circuloexterior {
+    position: absolute;
+    width: 470px;
+    height: 470px;
+    /*width: 35%;/*
+  height: 35%;*/
+    border: 1px solid white;
+    border-radius: 50%;
+    animation: exterior 7s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+
+
+
+}
+
+#circulomedio {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border: 1px solid white;
+    border-radius: 50%;
+    animation: medio 7s;
+
+
+
+}
+
+#circulointerior {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border: 1px solid white;
+    border-radius: 50%;
+    animation: interior 7s;
+
+
+}
+
+#lognombre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    color: white;
+    text-align: center;
+    font-size: 55px;
+
+}
+
+#nombrentero {
+    color: white;
+    font-size: 20px;
+    animation: lnombre 12s;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 30px;
+
+}
+
+/*ANIMACION DE LOGO*/
+@keyframes exterior {
+
+    0% {
+        opacity: 0%;
+    }
+
+    30% {
+        opacity: 80%;
+    }
+
+    70% {
+        opacity: 100%;
+    }
+}
+
+@keyframes medio {
+
+    0% {
+        opacity: 0%;
+    }
+
+    40% {
+        opacity: 80%;
+    }
+
+    80% {
+        opacity: 100%;
+    }
+}
+
+@keyframes interior {
+
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 80%;
+    }
+
+    90% {
+        opacity: 100%;
+    }
+}
+
+@keyframes lnombre {
+
+    0% {
+        opacity: 0%;
+    }
+
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+/*SOCIAL MEDIA*/
+.menu {
+    background-image: url(textura/bitchuentexture.png);
+    background-color: #403E3F;
+    height: 10vh;
+    top: 0px;
+    position: sticky;
+}
+
+.menu img:hover {
+    animation-name: bigger;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bigger {
+    from {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(1.1)
+    }
+}
+
+@keyframes aparicion {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 50%
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    background: rgba(0, 0, 0, 0);
+    animation-name: aparicion;
+    animation-duration: 5s;
+}
+
+.menu li {
+    margin: 10px;
+
+}
+
+/*ABOUT*/
+#apartadoabout {
+    background-image: url(textura/texturamadera.png);
+    background-color: #403E3F;
+
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+}
+
+.about {
+    background-image: url(textura/recycledpapertexture.png);
+    background-color: #262526;
+    color: white;
+
+    height: 55vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+    font-size: 30px;
+}
+
+#bullets {
+    display: flex;
+    align-items: flex-start;
+    font-size: 20px;
+}
+
+
+
+/*TRABAJOS*/
+.trabajos {
+    height: 100vh;
+    /*background-color: #737272;*/
+    background-color: #0D0D0D;
+    background-image: url(textura/recycledpapertexture.png);
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.trabajos h1 {
+    color: white;
+    font-size: 60px;
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.iconostrab:hover {
+    animation-name: bigger;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#trableft {
+    height: 200px;
+    width: 200px;
+    
+    background-image: url(imagenes/iconootrabajoleft.png);
+    background-size: cover;
+    background-position:center; 
+}
+
+#trabcen {
+    height: 200px;
+    width: 200px;
+    background-color: grey;
+    
+    background-image: url(imagenes/en-construccion.png);
+    background-size: cover;
+}
+
+#trabright {
+    height: 200px;
+    width: 200px;
+    background-color: grey;
+    
+    background-image: url(imagenes/en-construccion.png);
+    background-size: cover;
+}
+
+
+
+/*MASSOBRE*/
+
+.massobre {
+    height: 100vh;
+    background-color: #403E3F;
+    background-image: url(textura/recycledpapertexture.png);
+    display: flex;
+    flex-direction: column;
+}
+
+.massobre h1 {
+    color: white;
+    font-size: 60px;
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.iconosmassobre:hover {
+    animation-name: bigger;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#spoti {
+    height: 200px;
+    width: 200px;
+    background-image: url(imagenes/spotify.png);
+    background-size: cover;
+}
+
+#libros {
+    height: 200px;
+    width: 200px;
+    background-image: url(imagenes/goodreads.png);
+    background-size: cover;
+}
+
+#peliculas {
+    height: 200px;
+    width: 200px;
+    background-image: url(imagenes/pelicula.png);
+    background-size: cover;
+}
+
+
+
+
+/*CONTACTO*/
+
+.contacto {
+    height: 90vh;
+    background-image: url(textura/stonetexture.png);
+    background-color: #262526;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    width: 50%;
+    height: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    margin-top: 100px;
+}
+
+fieldset h1{
+    font-size: 60px;
+}
+
+#topcontacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+#name {
+    height: 30px;
+    width: 245px;
+    border: none;
+    margin-right: 10px;
+    height: 40px;
+}
+
+#email {
+    height: 30px;
+    width: 245px;
+    border: none;
+    height: 40px;
+}
+
+#content {
+    height: 200px;
+    margin-top: 10px;
+    width: 500px;
+    resize: none;
+    border: none;
+}
+
+#contacta {
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #737272;
+    width: 500px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+#contacta:hover {
+    border: 1px solid;
+    border-color: ghostwhite;
+    cursor: pointer;
+    color: ghostwhite;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #403E3F;
+    background-image: url(textura/bitchuentexture.png);
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+
+
+
+/*BARRA DE SCROLL*/
+body::-webkit-scrollbar {
+    height: 7px;
+    width: 7px;
+    background: #403E3F;
+
+}
+
+
+body::-webkit-scrollbar-thumb {
+    background: #593C4B;
+    border-radius: 10px;
+}
+
+
+/*modonocturno*/

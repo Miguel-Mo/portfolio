@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/*BARRA DE SCROLL*/
+body::-webkit-scrollbar {
+    height: 7px;
+    width: 7px;
+    background: #403E3F;
+
+}
+
+
+body::-webkit-scrollbar-thumb {
+    background: #593C4B;
+    border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar {
+    height: 7px;
+    width: 7px;
+    background: #403E3F;
+
+}
+
+
+textarea::-webkit-scrollbar-thumb {
+    background: #593C4B;
+    border-radius: 10px;
+}
+
+
+
+
+/*body*/
+
+body{
+    background-color: #737272;
+    font-family: montserrat;
+}
+
+
+/*main*/
+main {
+    height: 60vh;    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;   
+
+}
+
+footer{    
+    height: 40vh;
+    width: 100%;
+
+    border-top-style: solid;
+    border-top-color: black;
+    
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+
+/*divs de codigo*/
+.codigo{
+    width: 50vh;
+    height: 50vh;
+    background-color: grey;   
+    
+    margin-top: 10px;
+}
+
+textarea{
+    background-color: grey;
+    resize: none;
+    width: 100%;
+    height: 90%;
+    border: none;
+    color: white;  
+}
+
+
+
+
+
+/*titulo*/
+
+.titulo{
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*resultado*/
+
+.resultado{
+
+    width: auto;
+    height: 80%;
+  
+    
+    
+    
+}
+
+resultado img{
+    width: 100%;
+    height: auto;
+}
+@supports(object-fit: cover){
+    .resultado img{
+      height: 90%;
+      object-fit:cover;
+      object-position: center center;
+    }
